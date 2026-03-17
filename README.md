@@ -30,6 +30,7 @@ A console application that models a small airport booking system. It supports th
 - Delay a chosen arrival/departure flight by N minutes.
 - List all flights (sorted by time).
 
+## Project Structure
 BrisbaneAirportSystem/
 │
 ├── Program.cs
