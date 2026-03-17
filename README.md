@@ -31,20 +31,34 @@ A console application that models a small airport booking system. It supports th
 - List all flights (sorted by time).
 
 ## Folder structure
-/BrisbaneAirport
-  App.cs                      // app state + screen loop
-  ArrivalFlight.cs            // arrival flight model
-  DepartureFlight.cs          // departure flight model
-  FlightManager.cs            // user: flight manager
-  FlightManagerMenu.cs        // manager features (create/delay/list)
-  FrequentFlyer.cs            // user: frequent flyer
-  FrequentFlyerMenuScreen.cs  // ff menu + points + seat reallocation
-  LoginScreen.cs              // login routing
-  Program.cs                  // entry point
-  RegisterScreen.cs           // registration
-  Screen.cs                   // screen base class
-  StartupScreen.cs            // main menu
-  Traveller.cs                // user: traveller
-  TravellerMenuScreen.cs      // traveller features
-  UserBaseClass.cs            // shared user fields
-  UserRepository.cs           // in-memory user store
+BrisbaneAirportSystem/
+│
+├── Program.cs
+│
+├── Core/
+│   ├── App.cs
+│   └── Screen.cs
+│
+├── Models/
+│   ├── ArrivalFlight.cs
+│   ├── DepartureFlight.cs
+│   └── Traveller.cs
+│
+├── Users/
+│   ├── UserBaseClass.cs
+│   ├── FlightManager.cs
+│   └── FrequentFlyer.cs
+│
+├── Services/
+│   ├── FlightManagerService.cs   // (rename from FlightManagerMenu if you want)
+│   └── UserRepository.cs
+│
+├── Screens/
+│   ├── StartupScreen.cs
+│   ├── LoginScreen.cs
+│   ├── RegisterScreen.cs
+│   ├── TravellerMenuScreen.cs
+│   ├── FlightManagerMenu.cs
+│   └── FrequentFlyerMenuScreen.cs
+│
+└── README.md
