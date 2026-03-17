@@ -30,7 +30,6 @@ A console application that models a small airport booking system. It supports th
 - Delay a chosen arrival/departure flight by N minutes.
 - List all flights (sorted by time).
 
-## Folder structure
 BrisbaneAirportSystem/
 │
 ├── Program.cs
@@ -50,7 +49,7 @@ BrisbaneAirportSystem/
 │   └── FrequentFlyer.cs
 │
 ├── Services/
-│   ├── FlightManagerService.cs   // (rename from FlightManagerMenu if you want)
+│   ├── FlightManagerService.cs
 │   └── UserRepository.cs
 │
 ├── Screens/
